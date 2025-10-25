@@ -52,3 +52,5 @@ The default parameters are optimized for safety and stable performance:
 - This script **does not guarantee profits** — it’s designed purely for **Alpha point farming** by increasing your trading volume.  
 - **Avoid changing configuration parameters** unless you fully understand their impact.  
 - Run the script during stable market conditions to prevent slippage or exchange lag.
+
+📜 **License:** [MIT License](https://github.com/1206dev/Binane-Alpha-Auto-Plow-Point/blob/main/LICENSE)

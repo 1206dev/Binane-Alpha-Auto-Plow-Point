@@ -1,17 +1,16 @@
-let pauseFlg = false;
-let stopFlg = false;
-let amount = 100; // default 100usdt per order
-let maxCostFee = 2; // default 2usdt fee, when total fee > maxCostFee, stop order
-let maxTotalAmount = 16500; // default order total 16.500 usdt = 16 point (with coint x4 point), when totalAmount > maxTotalAmount, stop order
-let customize = 0.01; // Set the slippage between 2 orders. If the price slips too much, the order will be suspended until the price stabilizes and the order will automatically continue. Default 1%.
-let oldPrice = 0;
-let realBuyPrice = 0;
-let realSellPrice = 0;
-let startBalance = 0;
-let oldBalance = 0;
+var pauseFlg = false;
+var stopFlg = false;
+var amount = 50; // default 50usdt per order
+var maxCostFee = 2; // default 2usdt fee, when total fee > maxCostFee, stop order
+var maxTotalAmount = 16500; // default order total 16.500 usdt = 16 point (with coint x4 point), when totalAmount > maxTotalAmount, stop order
+var customize = 0.01; // Set the slippage between 2 orders. If the price slips too much, the order will be suspended until the price stabilizes and the order will automatically continue. Default 1%.
+var oldPrice = 0;
+var realBuyPrice = 0;
+var realSellPrice = 0;
+var startBalance = 0;
+var oldBalance = 0;
 
-let totalFee = 0;
-let currentTotalAmount = 0;
+var currentTotalAmount = 0;
 
 const setInputValue = (element, value, options = {}) => {
     if (!element) {
